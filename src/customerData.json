@@ -1,0 +1,25 @@
+{
+    "customers": {
+      "customerJohnDoe": {
+        "title": "John Doe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac orci quis justo dictum tincidunt."
+      },
+      "customerJaneSmith": {
+        "title": "Jane Smith",
+        "text": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      },
+      "customerAcmeCorp": {
+        "title": "Acme Corporation",
+        "text": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+      },
+      "customerGlobalTech": {
+        "title": "Global Tech",
+        "text": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex."
+      },
+      "customerNextGenInnovations": {
+        "title": "NextGen Innovations",
+        "text": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non."
+      }
+    }
+  }
+  
