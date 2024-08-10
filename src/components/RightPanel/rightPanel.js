@@ -6,8 +6,8 @@ import PhotoGrid from './photoGrid.js';
 const RightPanel = ({title, text}) => {
 
     return(<div className='right-panel'>
-        <h3>{title}</h3>
-        <h3>{text}</h3>
+        <b classname = 'title'>{title}</b>
+        <p className='subtext'>{text}</p>
         <PhotoGrid/>
         <div className='empty'>""</div>
     </div>)

@@ -4,8 +4,6 @@
     align-items: center;
     flex: 7;
     padding: 16px;
-    /* padding-left:100px;
-    padding-right: 150px; */
     background-color: #F9F9F9;
     overflow-y: hidden;
     height: 100%; 
@@ -17,4 +15,8 @@
 
 .empty{
     height: 80px;
+}
+
+b{
+    font-size: 32px;
 }

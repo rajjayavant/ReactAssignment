@@ -9,8 +9,8 @@ const Card = ({customerID, title, text, isSelected, selectCard }) => {
 
   return (
     <div className={cardClassName} onClick = {onClick}>
-      <h3>{title}</h3>
-      <p>{text}</p>
+      <h3 className='title'>{title}</h3>
+      <p classname='subtext'>{text}</p>
     </div>
   );
 };
