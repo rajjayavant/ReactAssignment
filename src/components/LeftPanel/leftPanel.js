@@ -1,20 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './leftPanel.css';
 import Card from './CustomerCard.js';
-import data from '../../customerData.json'; // Import the JSON data
+import data from '../../customerData.json';
 
-const LeftPanel = () => {
-  const {customers}  = data;
-  const cards = Object.keys(customers).map(key => {
-    const customer = customers[key];
-    return <Card key={key} title={customer.title} text={customer.text} />;
-  });
+const LeftPanel = ({selectedCustomer,updatePanel}) => {
+    const { customers } = data;
+    const selectCard = (customerID) => {
+        updatePanel(customerID, customers[customerID].title, customers[customerID].text);
+    }
 
-  return (
-    <div className='left-panel'>
-      {cards}
-    </div>
-  );
+    const cards = Object.keys(customers).map(customerID => {
+        const customer = customers[customerID];
+        console.log(customerID);
+        return (
+          <Card 
+            customerID={customerID} 
+            title={customer.title} 
+            text={customer.text} 
+            isSelected={selectedCustomer === customerID} 
+            selectCard={selectCard} 
+          />
+        );
+      });
+      
+
+    return (
+        <div className='left-panel'>
+            {cards}
+        </div>
+    );
 }
 
 export default LeftPanel;
