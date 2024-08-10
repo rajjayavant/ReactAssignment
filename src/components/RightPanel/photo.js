@@ -1,6 +1,5 @@
-// src/components/Photo.js
 import React from 'react';
-import './photo.css'; // Optional: for custom styling
+import './photo.css'; 
 
 const Photo = ({ url }) => {
   return (
