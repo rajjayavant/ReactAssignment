@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Microsoft+Reference+Sans+Serif:wght@400;700&family=Microsoft+Reference+Serif:wght@400;700&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  font-family: 'Microsoft Reference Sans Serif', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Microsoft Reference Serif', serif; 
+}
+
+

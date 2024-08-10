@@ -1,5 +1,20 @@
-.right-panel{
-    flex:5;
-    padding: '16px';
-    background-color: '#fff';
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 7;
+    padding: 16px;
+    /* padding-left:100px;
+    padding-right: 150px; */
+    background-color: #F9F9F9;
+    overflow-y: hidden;
+    height: 100%; 
+}
+
+.right-panel:hover {
+    overflow-y: auto;
+}
+
+.empty{
+    height: 80px;
 }

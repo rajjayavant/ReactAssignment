@@ -1,4 +1,3 @@
-// src/App.js
 import React, {useState} from 'react';
 import LeftPanel from './components/LeftPanel/leftPanel.js';
 import RightPanel from './components/RightPanel/rightPanel.js';
