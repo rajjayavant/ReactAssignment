@@ -30,6 +30,7 @@ const PhotoGrid = () => {
       {imageUrls.map((url, index) => (
         <Photo key={index} url={url} />
       ))}
+      <div></div>
     </div>
   );
 };
