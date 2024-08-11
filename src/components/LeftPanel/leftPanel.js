@@ -11,7 +11,6 @@ const LeftPanel = ({ selectedCustomer, updatePanel }) => {
 
     const cards = Object.keys(customers).map(customerID => {
         const customer = customers[customerID];
-        console.log(customerID);
         return (
             <Card
                 customerID={customerID}

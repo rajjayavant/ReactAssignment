@@ -1,18 +1,21 @@
 import React from 'react';
-import './customerCard.css'
+import './customerCard.css';
 
-const Card = ({customerID, title, text, isSelected, selectCard }) => {
+const Card = ({ customerID, title, text, isSelected, selectCard }) => {
   const cardClassName = `card ${isSelected ? 'selected' : ''}`;
-  const onClick = ()=>{
+  const onClick = () => {
     selectCard(customerID);
-  }
+  };
 
   return (
-    <div className={cardClassName} onClick = {onClick}>
+    <div className={cardClassName} onClick={onClick}>
       <h3 className='title'>{title}</h3>
-      <p classname='subtext'>{text}</p>
+      <p className='subtext'>{text}</p>
+      <div>{console.log('card')}</div>
     </div>
   );
 };
 
-export default Card;
+export default React.memo(Card, (prevProps, nextProps) => {
+  return prevProps.isSelected === nextProps.isSelected;
+});

@@ -1,4 +1,3 @@
-// src/components/PhotoGrid.js
 import React, { useState, useEffect } from 'react';
 import Photo from './photo.js';
 import './photoGrid.css';
@@ -35,4 +34,6 @@ const PhotoGrid = () => {
   );
 };
 
-export default PhotoGrid;
+export default React.memo(PhotoGrid, (prevProps, nextProps) => {
+  return prevProps.imageUrls === nextProps.imageUrls;
+});

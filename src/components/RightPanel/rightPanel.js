@@ -4,7 +4,7 @@ import './photoGrid.js'
 import PhotoGrid from './photoGrid.js';
 import GridLoader from "react-spinners/ClipLoader";
 
-const RightPanel = ({title, text, isLoading}) => {
+const RightPanel = ({title, text}) => {
 
     return(<div className='right-panel'>
         <b classname = 'title'>{title}</b>
